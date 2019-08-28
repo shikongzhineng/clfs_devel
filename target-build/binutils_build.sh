@@ -1,0 +1,21 @@
+../configure     \
+--prefix=/usr \
+--build=${CLFS_HOST} \
+    --host=${CLFS_TARGET} \
+    --target=${CLFS_TARGET} \
+--libdir=/usr/lib64 \
+--with-gnu-as \
+--with-gnu-ld \
+--with-system-zlib \
+--disable-nls \
+--enable-multilib \
+--enable-gold \
+--enable-plugins \
+--enable-deterministic-archives \
+--enable-64-bit-bfd \
+--disable-gdb \
+--disable-werror \
+--enable-shared \
+--enable-multiarch \
+--enable-threads 
+make && make DESTDIR=$ROOT install
