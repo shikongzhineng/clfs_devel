@@ -26,8 +26,8 @@ LDFLAGS="-Wl,-rpath,${PREFIX_TOOLCHAIN}/lib" \
     --disable-libvtv \
     --disable-libcilkrts \
     --disable-libcilkrts \
-    --disable-threads \
-    --enable-multiarch \
+    --disable-threads \ 
+    --disable-werror \
     --enable-multilib \
     --enable-languages=c \
     --with-abi=${CLFS_ABI} \

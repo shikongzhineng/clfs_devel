@@ -1,0 +1,10 @@
+set +h
+umask 022
+CLFS=/mnt/clfs
+PREFIX_TOOLCHAIN="${CLFS}/toolchain"
+LC_ALL=POSIX
+PATH=${PREFIX_TOOLCHAIN}/bin:$PATH
+export CLFS LC_ALL PATH PREFIX_TOOLCHAIN
+unset CFLAGS CXXFLAGS PKG_CONFIG_PATH
+export CLFS_SOURCES="$CLFS/sources"
+export TOOLCHAIN_BUILD="$CLFS/toolchain-build"

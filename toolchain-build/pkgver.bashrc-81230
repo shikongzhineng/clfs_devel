@@ -1,0 +1,6 @@
+export LINUXVER=4.19
+export ISLVER=0.19
+export BINUTILSVER=2.30
+export GCCVER=8.1.0
+export GLIBCVER=2.27
+

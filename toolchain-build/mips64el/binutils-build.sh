@@ -12,7 +12,6 @@ AR=ar AS=as \
 	--with-gnu-ld \
 	--with-system-zlib \
 	--disable-nls \
-	--enable-multiarch \
 	--enable-multilib \
 	--enable-gold \
 	--enable-plugins \
@@ -21,5 +20,4 @@ AR=ar AS=as \
 	--disable-werror \
 	--enable-shared \
 	--enable-threads &&
-make configure-host
 make && make install
