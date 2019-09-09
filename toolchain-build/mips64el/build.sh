@@ -1,4 +1,3 @@
-source ./toolchain.mips64el.bashrc &&
        cd ./linux-$LINUXVER/ &&
        sh ../linux-headers.sh && 
        cd ../isl-$ISLVER/ && 
